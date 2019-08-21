@@ -1,0 +1,6 @@
+    1  history
+    2  hello
+    3  history
+    4  man ls
+    5  man grep
+    6  history > ex2.txt
