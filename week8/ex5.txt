@@ -1,0 +1,23 @@
+Ⅰ)По-русски.
+Физический адрес - "настоящий" / фактический адрес ячейки памяти (физической памяти).
+Виртуальный адрес - адрес который связан с физической памятью, но не указывает её напрямую.
+В то время как физический адрес прямо указывает на физическую память, виртуальный адрес делиться на
+1)номер страницы
+2)offset(смещение)
+Страница позволяет узнать фрейм физической памяти (с помощью MMU-шки)
+Offset же показывает offset в фрейме физической памяти.(Спасибо капитан очевидность)
+В итоге, физический адрес это фактический адрес физической памяти, а виртуальный это некий адрес который позволяет узнать фактический адрес.(И снова спасибо)
+Если говорить об использовании, то виртуальный адрес позволяет реализовать дополнительные возможности для системы.
+Например: вторичное хранилище (и заодно page fault :D), последовательность и непрерывность памяти для процесса.
+
+Ⅱ)English version.(google translate)
+Physical address - the "real" / actual address of the memory cell (physical memory).
+A virtual address is an address that is associated with physical memory, but does not indicate it directly.
+While the physical address directly points to physical memory, the virtual address is divided by
+1) page number
+2) offset
+The page allows you to find out the frame of physical memory (using MMU)
+Offset also shows offset in the frame of physical memory
+As a result, the physical address is the actual address of the physical memory, and the virtual is a certain address that allows you to find out the actual address.
+If we talk about use, then the virtual address allows you to implement additional features for the system.
+For example: secondary storage, the sequence and continuity of memory for the process.

@@ -1,0 +1,4 @@
+1) Amount of offset bits = log(2)(8*1024) = 13 //3+10 quickmath
+2) Bits for page number = 16 - 13 = 3
+3) Amount of pages = 2^(Bits for page number) = 2^3 = 8
+4) Amount of entries = 8 (same as in 3) in given task)
