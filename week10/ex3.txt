@@ -1,0 +1,25 @@
+Part |:
+1)After creation:
+omegalul@omegalul-Laptop:~/week10$ ls -l _ex3.txt
+-rw-r--r-- 1 omegalul omegalul 0 окт 24 18:16 _ex3.txt
+
+2)Removing execute permission for everyone
+omegalul@omegalul-Laptop:~/week10$ chmod ugo-x _ex3.txt 
+omegalul@omegalul-Laptop:~/week10$ ls -l _ex3.txt 
+-rw-r--r-- 1 omegalul omegalul 5 окт 24 18:09 _ex3.txt
+
+3)Grant all permisions for user and others
+omegalul@omegalul-Laptop:~/week10$ chmod uo+rwx _ex3.txt 
+omegalul@omegalul-Laptop:~/week10$ ls -l _ex3.txt 
+-rwxr--rwx 1 omegalul omegalul 5 окт 24 18:09 _ex3.txt
+
+4)Group permissions=User permissions
+omegalul@omegalul-Laptop:~/week10$ chmod g=u _ex3.txt 
+omegalul@omegalul-Laptop:~/week10$ ls -l _ex3.txt
+-rwxrwxrwx 1 omegalul omegalul 5 окт 24 18:09 _ex3.txt
+
+
+Part ||:
+"660" means user(1) and group(2) have permissions for /* 6=4(read)+2(write) */ read and write, while other have not permission.
+"775" means user and group have all permissions(read,write,execute) and other have read and execute permission.
+"777" means everyone have all permissions.

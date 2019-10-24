@@ -1,0 +1,22 @@
+I am not sure which output should i provide, so i think this will include all needed information about steps.
+1)file.txt:
+omegalul@omegalul-Laptop:~/week1$ touch file.txt
+omegalul@omegalul-Laptop:~/week1$ ls -i file.txt
+54543111 file.txt
+
+2)link _ex2.txt
+omegalul@omegalul-Laptop:~/week10$ link ~/week1/file.txt _ex2.txt
+
+3)find:
+omegalul@omegalul-Laptop:~/week10$ find ~/week1/file.txt -inum 54543111
+/home/omegalul/week1/file.txt
+
+omegalul@omegalul-Laptop:~/week10$ find ~/week10 -inum 54543111
+/home/omegalul/week10/_ex2.txt
+
+omegalul@omegalul-Laptop:~/week10$ find ~/ -inum 54543111
+/home/omegalul/week1/file.txt
+/home/omegalul/week10/_ex2.txt
+
+4)rm:
+omegalul@omegalul-Laptop:~/week10$ find ~/ -inum 54543111 -exec rm {} \;
