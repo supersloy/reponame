@@ -1,0 +1,8 @@
+As default buffering type is line buffering we can determine buffer before fork.
+For 1(left) example such buffer is "Hello", while for 2(right) example buffer is empty, but "Hello\n" is already printed.
+
+As fork just copy process, buffer will stay the same.
+After invoking printf("/n") buffer with transition symbol will be printed in standart output.
+
+As buffer of 1 example is "Hello" then "Hello\n" will be printed twice(1 from parent,1 from fork).
+As buffer of 2 example is "" then "\n" will be printed twice.
